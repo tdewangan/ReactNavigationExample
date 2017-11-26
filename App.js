@@ -2,25 +2,19 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { StackNavigator } from 'react-navigation';
 
-import HomeScreen from './HomeScreen';
-import ProfileScreen from './ProfileScreen';
+import HomeScreen from './js/HomeScreen';
+import ProfileScreen from './js/ProfileScreen';
+import ChatScreen from './js/ChatScreen';
 
 const SimpleApp = StackNavigator({
   Home: { screen: HomeScreen },
   Profile: { screen: ProfileScreen },
+  Chat: { screen: ChatScreen },
 });
 
 export default class App extends React.Component {
   render() {
     return <SimpleApp style={styles.container} />;
-    // return (
-    //   <View>
-    //     <Text>App, Navigation!</Text>
-    //     <Text>App, Navigation!</Text>
-    //     <Text>App, Navigation!</Text>
-    //     <SimpleApp />
-    //   </View>
-    // );
   }
 }
 

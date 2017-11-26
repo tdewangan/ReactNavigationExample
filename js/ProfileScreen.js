@@ -14,7 +14,7 @@ class ProfileScreen extends React.Component {
                 <Button
                     title="Home"
                     onPress={() =>
-                        navigate('Home', { name: 'Jane' })
+                        navigate('Home')
                     }
                 />
             </View>
